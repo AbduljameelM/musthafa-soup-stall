@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musthafa Soup Stall</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #2F4F4F; /* Light Slate Gray */
+            color: white;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay for better visibility */
+            padding: 4rem 2rem;
+            text-align: center;
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+            background-image: url('https://via.placeholder.com/1920x1080?text=musthafa+soup stall');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        header h1 {
+            font-size: 3.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+            color: #FF6F61; /* Coral */
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #F5F5F5;
+        }
+        .about-text {
+            margin-top: 2rem;
+            font-size: 1.1rem;
+            color: #E0E0E0;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        nav {
+            background-color: #333; /* Dark background for nav */
+            padding: 1rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #50B3A2; /* Pastel Teal */
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #FF6F61; /* Coral on hover */
+        }
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 3rem 2rem;
+        }
+        .menu-item {
+            background-color: rgba(33, 33, 33, 0.8);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .menu-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+        .menu-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+        .menu-item:hover img {
+            opacity: 0.85;
+        }
+        .menu-item h3 {
+            margin: 1rem;
+            font-size: 1.6rem;
+            color: #FF6F61; /* Coral */
+            font-weight: 600;
+        }
+        .menu-item p {
+            color: #ddd;
+            margin-bottom: 1rem;
+        }
+        #contact {
+            padding: 4rem 2rem;
+            text-align: center;
+            background-color: #3A3A3A;
+            border-radius: 12px;
+            margin-top: 3rem;
+        }
+        #contact h2 {
+            color: #50B3A2; /* Pastel Teal */
+            margin-bottom: 1.5rem;
+        }
+        #contact p {
+            color: #E0E0E0;
+        }
+        footer {
+            background-color: #FF6F61; /* Coral */
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            border-radius: 0 0 12px 12px;
+        }
+        footer p {
+            margin: 0;
+        }
+        a {
+            color: #50B3A2; /* Pastel Teal */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* Responsive design */
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            header p {
+                font-size: 1rem;
+            }
+            .about-text {
+                font-size: 1rem;
+                max-width: 90%;
+            }
+            .menu {
+                grid-template-columns: 1fr 1fr;
+            }
+            footer {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Musthafa Soup Stall</h1>
+        <p>Delicious Snacks & Soups to Satisfy Your Cravings</p>
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p>Welcome to Musthafa Soup Stall, where flavor meets tradition. We pride ourselves on serving the most delicious and hearty snacks and soups that satisfy your cravings. Using only the freshest ingredients and traditional recipes, we bring you a dining experience that's unforgettable. Join us and taste the difference!</p>
+        </div>
+    </header>
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="menu" class="menu">
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/300?text=Samosa" alt="Samosa">
+            <h3>Samosa</h3>
+            <p>Perfectly crispy and filled with tasty goodness.</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/300?text=Mutton+Soup" alt="Mutton Soup">
+            <h3>Mutton Soup</h3>
+            <p>Rich, hearty, and full of flavor.</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/300?text=Chicken+Pakoda" alt="Chicken Pakoda">
+            <h3>Chicken Pakoda</h3>
+            <p>Crispy bites of chicken seasoned to perfection.</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/300?text=Chicken+Cutlet" alt="Chicken Cutlet">
+            <h3>Chicken Cutlet</h3>
+            <p>A classic snack that's crunchy outside and tender inside.</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/300?text=Chicken+Leg+Piece" alt="Chicken Leg Piece">
+            <h3>Chicken Leg Piece</h3>
+            <p>Juicy and perfectly grilled to tantalize your taste buds.</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/300?text=Egg+Bonda" alt="Egg Bonda">
+            <h3>Egg Bonda</h3>
+            <p>Golden fried and packed with delicious egg flavor.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Phone: +91 6383330912, +91 9677048381</p>
+        <p>Email: <a href="mailto:musthafa1103@gmail.com">musthafa1103@gmail.com</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Musthafa Soup Stall | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
